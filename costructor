@@ -1,0 +1,24 @@
+interface Payment {
+    void pay();
+}
+
+class UPI implements Payment {
+    String name;
+
+    UPI(String name) {
+        this.name = name;
+    }
+
+    public void pay() {
+        System.out.println("Payment Method: UPI");
+        System.out.println("Name: " + name);
+        System.out.println("Payment Successful!");
+    }
+}
+
+class Main {
+    public static void main(String[] args) {
+        UPI obj = new UPI("Rahul");
+        obj.pay();
+    }
+}
