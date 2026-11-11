@@ -1,0 +1,4 @@
+package com.example;
+public class app
+public static void main (string[]) orgs
+system.out.println("hello from maven")
